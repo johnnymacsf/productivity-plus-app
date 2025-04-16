@@ -35,3 +35,36 @@ A full-stack productivity web application to help users stay organized and focus
 
 To access the app, please go to link below to create your account and get started with Productivity Plus!
 Link: https://productivity-plus-frontend.onrender.com
+
+## Local Development
+
+Follow the steps listed below to run this application locally.
+
+### Prerequisites
+- Node.js and npm installed
+- MongoDB
+
+### 1. Clone the repository
+
+- git clone https://github.com/johnnymacsf/productivity-plus-app.git
+- cd productivity-plus-app
+
+### 2. Setup the backend
+
+- cd server
+- npm install
+- Create your .env file for the server folder with the following variables:
+    - MONGODB_URI=''
+    - JWT_SECRET=''
+    - NODE_ENV = 'development'
+    - EMAIL_USER=''
+    - EMAIL_PASS=''
+- npm run server
+
+### 3. Setup the frontend
+
+- cd client
+- npm install
+- Create your .env file for the client folder with the following variables:
+    - VITE_BACKEND_URL= 'http://localhost:YOUR_PORT'
+- npm run dev
