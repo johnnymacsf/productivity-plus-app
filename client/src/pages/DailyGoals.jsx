@@ -109,6 +109,7 @@ const DailyGoals = () => {
         <Navbar />
         <div className='absolute top-24 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-4'>
           <h1 className='text-4xl font-semibold text-green-500 underline'>Daily Goals</h1>
+          <p className='text-xl font-semibold text-black'></p>
           <div className='flex items-center gap-4 mt-4'>
             <button
               onClick={prevDay}
@@ -127,7 +128,9 @@ const DailyGoals = () => {
             </button>
           <div className='mt-6 w-full px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center'>
             {goals.length === 0 ? (
-              <p className='text-white'>No goals yet for today, consider making one!</p>
+              <div className='col-span-full flex justify-center items-center h-40'>
+                <p className="text-black text-center text-lg">No goals yet for today, consider making one!</p>
+              </div>
             ) : (
               goals.map((goal) => (
                 <GoalCard key={goal._id} goal={goal} onToggle={handleToggleComplete} onDelete={handleDelete}/>
