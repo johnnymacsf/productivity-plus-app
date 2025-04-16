@@ -67,4 +67,5 @@ Follow the steps listed below to run this application locally.
 - npm install
 - Create your .env file for the client folder with the following variables:
     - VITE_BACKEND_URL= 'http://localhost:YOUR_PORT'
+- In the AppContext.jsx file, uncomment the first backendUrl line on line 10 and comment the second backendUrl line on line 11
 - npm run dev
