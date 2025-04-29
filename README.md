@@ -45,27 +45,40 @@ Follow the steps listed below to run this application locally.
 - MongoDB
 
 ### 1. Clone the repository
-
-- git clone https://github.com/johnnymacsf/productivity-plus-app.git
-- cd productivity-plus-app
+```bash
+git clone https://github.com/johnnymacsf/productivity-plus-app.git
+```
+```bash
+cd productivity-plus-app
+```
 
 ### 2. Setup the backend
-
-- cd server
-- npm install
+```bash
+cd server
+```
+```bash
+npm install
+```
 - Create your .env file for the server folder with the following variables:
     - MONGODB_URI=''
     - JWT_SECRET=''
     - NODE_ENV = 'development'
     - EMAIL_USER=''
     - EMAIL_PASS=''
-- npm run server
+```bash
+npm run server
+```
 
 ### 3. Setup the frontend
-
-- cd client
-- npm install
+```bash
+cd client
+```
+```bash
+npm install
+```
 - Create your .env file for the client folder with the following variables:
     - VITE_BACKEND_URL= 'http://localhost:YOUR_PORT'
 - In the AppContext.jsx file, uncomment the first backendUrl line on line 10 and comment the second backendUrl line on line 11
-- npm run dev
+```bash
+npm run dev
+```
